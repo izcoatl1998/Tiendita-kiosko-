@@ -52,7 +52,7 @@ namespace Mitiendita
             ticket.WriteLine("Subtotal: $"+sub_total.ToString());
             ticket.WriteLine("Subtotal con Iva del 16%:  $"+total.ToString());
             ticket.WriteLine("Se pago con: "+pagar.ToString());
-            ticket.WriteLine("Cambio: " + (pagar-total).ToString());
+            ticket.WriteLine("Cambio: " + (pagar-total).ToString());//tuve que hacer asi el cambio por que no me daba con la variable cambio
             ticket.Close();
             fs.Close();
         }
